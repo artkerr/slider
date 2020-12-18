@@ -6,6 +6,7 @@ const sliderList = slider.querySelector('.slider__list');
 const sliderItem = sliderList.querySelectorAll('.slider__item');
 const prevButton = slider.querySelector('.slider__prev-btn');
 const nextButton = slider.querySelector('.slider__next-btn');
+const dotItems = slider.querySelectorAll('.slider__dots-item');
 const itemWidth= slider.offsetWidth / slidesToShow;
 const movePosition = slidesToScroll * itemWidth;
 
@@ -23,26 +24,16 @@ const setNextPhoto = () => {
   checkButton();
 }
 
-prevButton.addEventListener('click', () => {
-  setPrevPhoto();
-});
-
-nextButton.addEventListener('click', () => {
-  setNextPhoto()
-});
+prevButton.addEventListener('click', setPrevPhoto);
+nextButton.addEventListener('click', setNextPhoto);
 
 const setPosition = () => {
   sliderList.style.transform = `translateX(${position}px)`;
 };
 
 const checkButton = () => {
+  console.log(position)
   prevButton.disabled = position === 0;
   nextButton.disabled = position <= -(sliderItem.length - slidesToShow) * itemWidth;
 };
 checkButton()
-
-
-
-
-
-

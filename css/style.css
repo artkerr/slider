@@ -14,9 +14,7 @@ img {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
-  background-color: #949494;
 }
 
 .slider__list {
@@ -26,7 +24,7 @@ img {
 }
 
 .slider__item {
-  min-width: 100%;
+ width: 20%;
   min-height: auto;
   position: relative;
 }
@@ -40,22 +38,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
-/* .slider__prev-btn {
-  background: url("../assets/500x500_2.png") no-repeat;
-  background-size: contain;
-  padding: 20px;
-  cursor: pointer;
-  border: none;
-}
-
-.slider__next-btn {
-  background: url("../assets/500x500.png") no-repeat;
-  background-size: contain;
-  padding: 20px;
-  cursor: pointer;
-  border: none;
-} */
 
 
 .slider__prev-btn,
@@ -81,4 +63,7 @@ img {
 .slider__prev-btn:disabled,
 .slider__next-btn:disabled {
   opacity: 0.5;
+  cursor: auto;
 }
+
+
