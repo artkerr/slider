@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Слайдер</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="slider__list">
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 1150px)"srcset="assets/3000x1500_1.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_1.webp" type="image/webp">
+          <source media="(min-width: 320px)" srcset="assets/600x1200_1.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_1.jpg">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_1.jpg">
+          <img src="assets/600x1200_1.jpg" class="slider__img" alt="Фото 1">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 1150px)"srcset="assets/3000x1500_2.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_2.webp" type="image/webp">
+          <source media="(min-width: 320px)" srcset="assets/600x1200_2.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_2.jpg">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_2.jpg">
+          <img src="assets/600x1200_2.jpg" class="slider__img" alt="Фото 2">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 1150px)"srcset="assets/3000x1500_3.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_3.webp" type="image/webp">
+          <source media="(min-width: 320px)" srcset="assets/600x1200_3.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_3.jpg">
+          <source media="(min-width: 768px)" srcset="assets/1000x1200_3.jpg">
+          <img src="assets/600x1200_3.jpg" class="slider__img" alt="Фото 3">
+        </picture>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <button class="slider__prev-btn" type="button" aria-label="Предыдущий отзыв"></button>
+      <button class="slider__next-btn" type="button" aria-label="Следующий отзыв"></button>
+    </div>
+    <div class="slider__dots">
+      
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
