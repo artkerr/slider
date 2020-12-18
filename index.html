@@ -9,9 +9,9 @@
 <body>
   <div class="slider">
     <div class="slider__list">
-      <div class="slider__item first">
+      <div class="slider__item slider__item--active">
         <picture>
-          <source media="(min-width: 1150px)"srcset="assets/3000x1500_1.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_1.webp" type="image/webp">
           <source media="(min-width: 768px)" srcset="assets/1000x1200_1.webp" type="image/webp">
           <source media="(min-width: 320px)" srcset="assets/600x1200_1.webp" type="image/webp">
           <source media="(min-width: 1150px)" srcset="assets/3000x1500_1.jpg">
@@ -21,7 +21,7 @@
       </div>
       <div class="slider__item">
         <picture>
-          <source media="(min-width: 1150px)"srcset="assets/3000x1500_2.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_2.webp" type="image/webp">
           <source media="(min-width: 768px)" srcset="assets/1000x1200_2.webp" type="image/webp">
           <source media="(min-width: 320px)" srcset="assets/600x1200_2.webp" type="image/webp">
           <source media="(min-width: 1150px)" srcset="assets/3000x1500_2.jpg">
@@ -31,7 +31,7 @@
       </div>
       <div class="slider__item">
         <picture>
-          <source media="(min-width: 1150px)"srcset="assets/3000x1500_3.webp" type="image/webp">
+          <source media="(min-width: 1150px)" srcset="assets/3000x1500_3.webp" type="image/webp">
           <source media="(min-width: 768px)" srcset="assets/1000x1200_3.webp" type="image/webp">
           <source media="(min-width: 320px)" srcset="assets/600x1200_3.webp" type="image/webp">
           <source media="(min-width: 1150px)" srcset="assets/3000x1500_3.jpg">
@@ -39,12 +39,17 @@
           <img src="assets/600x1200_3.jpg" class="slider__img" alt="Фото 3">
         </picture>
       </div>
-    </div>
-    <div class="slider__nav">
-      <button class="slider__prev-btn" type="button" aria-label="Предыдущее фото"></button>
-      <button class="slider__next-btn" type="button" aria-label="Следующее фото"></button>
+      <div class="slider__nav">
+        <button class="slider__prev-btn" type="button" aria-label="Предыдущее фото"></button>
+        <button class="slider__next-btn" type="button" aria-label="Следующее фото"></button>
+      </div>
+      <div class="slider__dots">
+        <span class="slider__dots-item slider__dots-item--active" aria-label="Фото 1"></span>
+        <span class="slider__dots-item" aria-label="Фото 2"></span>
+        <span class="slider__dots-item" aria-label="Фото 3"></span>
+      </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
