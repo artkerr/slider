@@ -55,7 +55,6 @@ sliderList.addEventListener('click', () => {
   clearInterval(interval);
 })
 
-
 let startX = 0;
 let shift = 0;
 let left = false;
