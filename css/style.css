@@ -56,7 +56,7 @@ img {
   background-color: transparent;
 }
 
-.slider__next-btn {
+.slider__prev-btn {
   transform: rotate(45deg);
   border-right: none;
   border-top: none;
