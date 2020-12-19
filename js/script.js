@@ -54,3 +54,26 @@ const interval = setInterval(setNextSlide, 4000);
 sliderList.addEventListener('click', () => {
   clearInterval(interval);
 })
+
+
+let startX = 0;
+let shift = 0;
+let left = false;
+let right= false;
+
+const touchStart = (evt) => {
+  evt.preventDefault();
+  startX = Math.ceil(evt.touches[0].clientX);
+  clearInterval(interval);
+}
+
+const touchMove = (evt) => {
+  shift = Math.ceil(evt.touches[0].clientX) - startX;
+  (startX < shift) ? left = true : right= true;
+};
+
+const touchEnd = (evt) => (left) ? setPrevSlide() : setNextSlide();
+
+sliderList.addEventListener('touchstart', (evt) => touchStart(evt));
+sliderList.addEventListener('touchmove', (evt) => touchMove(evt));
+sliderList.addEventListener('touchend', (evt) => touchEnd(evt));
