@@ -52,24 +52,25 @@ img {
   width: 35px;
   height: 35px;
   border: 5px solid white; 
-  transform: rotate(45deg);
   cursor: pointer;
   background-color: transparent;
+}
+
+.slider__next-btn {
+  transform: rotate(45deg);
   border-right: none;
   border-top: none;
 }
 
 .slider__next-btn {
-  border: 4px solid white; 
   border-left: none;
   border-top: none;
   transform: rotate(-45deg);
 }
 
-.slider__prev-btn:disabled,
-.slider__next-btn:disabled {
+.slider__prev-btn:hover,
+.slider__next-btn:hover {
   opacity: 0.5;
-  cursor: auto;
 }
 
 .slider__dots {
