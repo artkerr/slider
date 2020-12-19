@@ -47,6 +47,12 @@ img {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .slider__nav {
+    max-width: 580px;
+  }
+}
+
 .slider__prev-btn,
 .slider__next-btn {
   width: 35px;
@@ -54,6 +60,15 @@ img {
   border: 5px solid white; 
   cursor: pointer;
   background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .slider__prev-btn,
+  .slider__next-btn  {
+    width: 25px;
+    height: 25px;
+    border-width: 3px;
+  }
 }
 
 .slider__prev-btn {
@@ -81,12 +96,25 @@ img {
   transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+  .slider__dots {
+    top: 20px;
+  }
+}
+
 .slider__dots-item {
   border-radius: 50%;
   width: 20px;
   height: 20px;
   background-color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .slider__dots-item  {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .slider__dots-item:not(:last-child) {
